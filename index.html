@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+button{
+    background-color: rgb(255, 136, 127);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    font-size: 55px;
+}
+</style>
 <body>
-    <p>welcome to local git repo</p>
+    <button id ="btn" >0</button>
+
+    <script>
+        let btn =document.getElementById('btn')
+        let count = 0
+        btn.addEventListener('click',()=>{
+            count++
+            btn.innerHTML = count;
+        })
+          
+    </script>
 </body>
 </html>
